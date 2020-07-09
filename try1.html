@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('images/Photo1.jpg');
+    }
+
+    .left {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 105px;
+    }
+
+    .left div {
+        font-family: 'Piedra', cursive;
+        text-align: center;
+        color: white;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 18px 19px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: green;
+        text-decoration: underline;
+        padding: 18px 19px;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: rgba(34, 31, 31, 0.445);
+        padding: 6px 14px;
+        cursor: pointer;
+        border: 2px solid rgb(61, 59, 59);
+        border-radius: 8px;
+    }
+
+    .btn:hover {
+        font-size: larger;
+        color: green;
+    }
+
+    .container {
+        /* border: 2px solid purple; */
+        margin: 240px 380px;
+        padding: 28px 70px;
+        width: 35%;
+    }
+
+    .container h3 {
+        font-family: 'Yellowtail', cursive;
+        text-align: center;
+        color: white;
+        font-size: 23px;
+    }
+
+    .container h2 {
+        font-family: 'Holtwood One SC', serif;
+        text-align: center;
+        color: white;
+        font-size: 26px;
+    }
+
+    .services {
+        border: 2px solid red;
+        margin: 100px;
+        position: absolute;
+        top: 501px;
+        left: -75px;
+        display: inline-block;
+        padding: 20px;
+        width: 20%;
+    }
+
+    .services img {
+        width: 100px;
+        margin-left: 55px;
+    }
+    .services img:hover , .services1 img:hover , .services2 img:hover{
+        opacity: 0.5;
+    }
+    .services h3 {
+        font-family: 'Shadows Into Light', cursive;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 25px;
+    }
+
+    .services p {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 20px;
+    }
+
+    .services1 {
+        border: 2px solid red;
+        margin: 100px;
+        position: absolute;
+        top: 501px;
+        left: 385px;
+        display: inline-block;
+        padding: 20px;
+        width: 20%;
+    }
+
+    .services1 img {
+        width: 100px;
+        margin-left: 55px; 
+    }
+
+    .services1 h3 {
+        font-family: 'Shadows Into Light', cursive;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 25px;
+    }
+
+    .services1 p {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    .services2 {
+        border: 2px solid red;
+        margin: 100px;
+        position: absolute;
+        top: 501px;
+        right: -75px;
+        display: inline-block;
+        padding: 30px;
+        width: 20%;
+        border-radius: 4px;
+    }
+
+    .services2 img {
+        width: 100px;
+        margin-left: 45px; 
+        filter: invert(100%);
+    }
+
+    .services2 h3 {
+        font-family: 'Shadows Into Light', cursive;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .services2 p {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .sidebox {
+        border: 2px solid black;
+        margin: 100px;
+        border-left: 2px solid rgb(49, 44, 44);
+        position: absolute;
+        top: 147px;
+        left: -100px;
+        display: inline-block;
+        padding: 20px;
+        width: 4%;
+        background-color: rgb(49, 44, 44);
+    }
+    .sidebox ul{
+        list-style-type: none;
+    }
+    .sidebox ul li i{
+        font-size: 30px;
+        padding: 10px;
+        left: -62px;
+        filter: invert(100%);
+    }
+    .sidebox ul li i:hover{
+        cursor: pointer;
+        font-size: 38px;
+    }
+    .othersidebox {
+        border: 2px solid black;
+        margin: 100px;
+        border-right: 2px solid rgb(49, 44, 44); 
+        position: absolute;
+        top: 147px;
+        right: -100px;
+        display: inline-block;
+        padding: 20px;
+        width: 4%;
+        background-color: rgb(49, 44, 44);  
+    }
+    .othersidebox ul{
+        list-style-type: none;
+    }
+    .othersidebox ul li i{
+        font-size: 30px;
+        padding: 10px;
+        right: 63px;
+        filter: invert(100%);
+    }
+    .othersidebox ul li i:hover{
+        cursor: pointer;
+        font-size: 38px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/PhotoLogo.png" alt="">
+            <div>JM Photography</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About the Artist</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Sign In</button>
+            <button class="btn">Sign Up</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>You don't take a Photograph, you make it.</h3>
+        <h2>Showcase your Work</h2>
+    </div>
+    <div class="services">
+        <img src="images/p1.jpg" alt="">
+        <div>
+            <h3>PHOTOGRAPHY</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts.</p>
+        </div>
+    </div>
+    <div class="services1">
+        <img src="images/p2.jpg" alt="">
+        <div>
+            <h3>IMAGE PROCESSING</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts.</p>
+        </div>
+    </div>
+    <div class="services2">
+        <img src="images/p3.png" alt="">
+        <div>
+            <h3>VIDEOGRAPHY</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+    </div>
+    <div class="sidebox">
+        <ul>
+
+           <li><i class="glyphicon glyphicon-envelope"></i></li>
+           <li><i class="glyphicon glyphicon-thumbs-up"></i></li>
+           <li><i class="glyphicon glyphicon-cloud"></i></li>
+           <li><i class="glyphicon glyphicon-user"></i></li>
+        </ul>
+    </div>
+    <div class="othersidebox">
+        <ul>
+            <li><i class="glyphicon glyphicon-plus"></i></li>
+            <li><i class="glyphicon glyphicon-pencil"></i></li>
+            <li><i class="glyphicon glyphicon-download-alt"></i></li>
+            <li><i class="glyphicon glyphicon-search"></i></li>
+        </ul>
+    </div>
+</body>
+
+</html>
