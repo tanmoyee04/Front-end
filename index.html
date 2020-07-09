@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Kaushan Script', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/GymBG.JPG');
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 10px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 92px;
+
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+        /* in order to bring something at the center we need all the 3 things i.e. display block , width and margin auto  */
+        /* border: 2px solid rgb(116, 40, 40); */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 23px;
+        display: inline-block;
+        /* border: 2px solid rgb(56, 27, 27); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        /* text decoration is used in order to remone the underline of anchore tag  */
+        padding: 18px 19px;
+    }
+
+    .navbar li a:hover,
+    .navebar li a.active {
+        color: rgb(138, 46, 18);
+        text-decoration: underline;
+        padding: 18px 19px;
+    }
+
+    .btn {
+        font-family: 'Kaushan Script', cursive;
+        margin: 0px 9px;
+        color: rgb(194, 70, 21);
+        background-color: rgb(196, 168, 155);
+        padding: 6px 12px;
+        border: 2px solid rgb(116, 40, 40);
+        border-radius: 4px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(138, 46, 18);
+    }
+
+    .container {
+        border: 2px solid rgba(158, 97, 57, 0.747);
+        margin: 89px 84px;
+        padding: 21px 70px;
+        width: 36%;
+        border-radius: 11px;
+    }
+
+    .form-group input {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        display: block;
+        width: 237px;
+        padding: 7px;
+        border: 2px solid rgba(158, 97, 57, 0.747);
+        margin: 8px auto;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="images/GymLogo.jpg" alt="">
+            <div>Planet Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Come and join us</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your contact number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
